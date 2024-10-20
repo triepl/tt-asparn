@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tischtennis Verein Asparn an der Zaya</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .section {
+            min-height: 100vh;
+            padding: 4rem 0;
+        }
+        .header-background {
+            background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(37, 99, 235, 0.9));
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold text-blue-600">
+                    TT Asparn/Zaya
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#training" class="text-gray-700 hover:text-blue-600">Trainingszeiten</a>
+                    <a href="#location" class="text-gray-700 hover:text-blue-600">Spiellokal & Anfahrt</a>
+                    <a href="#sponsors" class="text-gray-700 hover:text-blue-600">Sponsoren</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Table Tennis Player Illustration -->
+    <header class="section header-background text-white flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%" class="max-w-4xl">
+                <g fill="white">
+                    <!-- Tisch -->
+                    <rect x="100" y="350" width="600" height="20" />
+                    <rect x="150" y="370" width="50" height="100" />
+                    <rect x="600" y="370" width="50" height="100" />
+                    
+                    <!-- Netz -->
+                    <rect x="395" y="300" width="10" height="70" />
+                    <line x1="395" y1="300" x2="405" y2="300" stroke="white" stroke-width="2" />
+                    
+                    <!-- Spieler -->
+                    <g transform="translate(200, 250)">
+                        <!-- Körper -->
+                        <circle cx="0" cy="0" r="20" /> <!-- Kopf -->
+                        <line x1="0" y1="20" x2="0" y2="80" stroke="white" stroke-width="10" /> <!-- Körper -->
+                        <line x1="0" y1="40" x2="-30" y2="70" stroke="white" stroke-width="8" /> <!-- Linker Arm -->
+                        <line x1="0" y1="40" x2="40" y2="20" stroke="white" stroke-width="8" /> <!-- Rechter Arm (Schlagarm) -->
+                        <line x1="0" y1="80" x2="-20" y2="130" stroke="white" stroke-width="8" /> <!-- Linkes Bein -->
+                        <line x1="0" y1="80" x2="20" y2="130" stroke="white" stroke-width="8" /> <!-- Rechtes Bein -->
+                        
+                        <!-- Schläger -->
+                        <rect x="40" y="10" width="25" height="35" transform="rotate(-45, 40, 10)" />
+                    </g>
+                    
+                    <!-- Ball (in Bewegung) -->
+                    <circle cx="350" cy="200" r="5" />
+                    <circle cx="400" cy="220" r="5" opacity="0.7" />
+                    <circle cx="450" cy="240" r="5" opacity="0.4" />
+                </g>
+            </svg>
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Tischtennis Verein Asparn an der Zaya
+            </h1>
+            <p class="text-xl md:text-2xl">
+                Willkommen bei unserem Tischtennisverein!
+            </p>
+        </div>
+    </header>
+
+    <!-- Trainingszeiten -->
+    <section id="training" class="section bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Trainingszeiten</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gray-100 rounded-lg p-6 mb-4">
+                    <h3 class="font-bold mb-2">Erwachsene</h3>
+                    <p>Dienstag: 18:00 - 21:00 Uhr</p>
+                    <p>Freitag: 18:00 - 21:00 Uhr</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-6">
+                    <h3 class="font-bold mb-2">Jugend</h3>
+                    <p>Dienstag: 16:30 - 18:00 Uhr</p>
+                    <p>Freitag: 16:30 - 18:00 Uhr</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spiellokal & Anfahrt -->
+    <section id="location" class="section bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Spiellokal & Anfahrt</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <h3 class="font-bold mb-4">Unser Spiellokal</h3>
+                    <p class="mb-4">Sporthalle Asparn an der Zaya</p>
+                    <p class="mb-4">Sportplatzstraße 1</p>
+                    <p class="mb-4">2151 Asparn an der Zaya</p>
+                    
+                    <h3 class="font-bold mb-4 mt-8">Anfahrt</h3>
+                    <p class="mb-2">Mit dem Auto:</p>
+                    <ul class="list-disc pl-6 mb-4">
+                        <li>Von der B7 kommend Richtung Ortszentrum</li>
+                        <li>Bei der Kirche links abbiegen</li>
+                        <li>Der Sportplatzstraße bis zur Sporthalle folgen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsoren -->
+    <section id="sponsors" class="section bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Unsere Sponsoren</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <!-- Platzhalter für Sponsoren -->
+                <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-center">
+                    <img src="/api/placeholder/200/100" alt="Sponsor 1" class="max-w-full h-auto">
+                </div>
+                <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-center">
+                    <img src="/api/placeholder/200/100" alt="Sponsor 2" class="max-w-full h-auto">
+                </div>
+                <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-center">
+                    <img src="/api/placeholder/200/100" alt="Sponsor 3" class="max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Tischtennis Verein Asparn an der Zaya</p>
+            <p class="mt-2">
+                <a href="#" class="hover:text-blue-400">Impressum</a> |
+                <a href="#" class="hover:text-blue-400">Datenschutz</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
